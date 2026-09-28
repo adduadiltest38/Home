@@ -14,6 +14,7 @@ cove ceiling.
 npm i
 npx remotion studio          # preview / scrub
 npm run render               # → out/bedroom_walkthrough.mp4
+npm run render:chunks        # same, resumable: 120-frame chunks joined losslessly
 ```
 
 > **Sandboxed machines.** Remotion downloads Chrome Headless Shell from

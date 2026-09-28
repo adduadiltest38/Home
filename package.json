@@ -9,7 +9,8 @@
     "render": "remotion render BedroomWalkthrough out/bedroom_walkthrough.mp4 --codec=h264 --crf=18 --gl=angle --concurrency=50%",
     "typecheck": "tsc --noEmit",
     "stills": "node scripts/render-stills.mjs",
-    "check:camera": "node scripts/check-camera.mjs"
+    "check:camera": "node scripts/check-camera.mjs",
+    "render:chunks": "bash scripts/render-chunks.sh"
   },
   "license": "UNLICENSED",
   "dependencies": {
