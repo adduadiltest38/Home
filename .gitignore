@@ -1,0 +1,6 @@
+node_modules
+.DS_Store
+out/*
+!out/bedroom_walkthrough.mp4
+*.log
+.env

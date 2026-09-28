@@ -1,0 +1,33 @@
+{
+  "name": "bedroom-walkthrough",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remotion + React Three Fiber architectural walkthrough of a renovated bedroom",
+  "scripts": {
+    "dev": "remotion studio",
+    "textures": "node scripts/make-textures.mjs",
+    "render": "remotion render BedroomWalkthrough out/bedroom_walkthrough.mp4 --codec=h264 --crf=18 --gl=angle --concurrency=50%",
+    "typecheck": "tsc --noEmit",
+    "stills": "node scripts/render-stills.mjs",
+    "check:camera": "node scripts/check-camera.mjs"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.1",
+    "@remotion/cli": "4.0.529",
+    "@remotion/three": "4.0.529",
+    "postprocessing": "^6.39.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "4.0.529",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2"
+  }
+}
